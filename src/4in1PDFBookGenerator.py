@@ -39,7 +39,7 @@ def gen4in1Book(output_file, input_file, layout):
         exit()
     
     inputPDF = PdfFileReader(file(input_file, 'rb'))
-    blankPagePDF = PdfFileReader(file("./SmileBlankPage.pdf", 'rb'))
+    blankPagePDF = PdfFileReader(file("./Resource/SmileBlankPage.pdf", 'rb'))
     output = PdfFileWriter()
     
     n_page_src = inputPDF.getNumPages()

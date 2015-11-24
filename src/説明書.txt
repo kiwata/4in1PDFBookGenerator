@@ -1,0 +1,54 @@
+
+Mac OS 10.8(Python2.7入り) で動作します（動作確認済みです）。
+
+------------------------------------
+手順
+1. ターミナルをApplication/Utilitiesから開いてください。
+2. ターミナル上で、次を入力して改行してください。
+
+cd (4in1PDFBookGeneratoのフォルダを置いた場所※注１)
+
+3. ターミナル上で、次を入力して改行してください。
+
+python 4in1PDFBookGenerator.py -i (入力ファイルの名前（パスで）※注２)
+
+すると、プログラムが走ります。次のログが出ていれば成功です。
+
+****** Start - 4in1 book generation ******
+****** Completed (^-^)b - 4in1 book generation ******
+
+完成したファイルは、次の名前で、4in1PDFBookGeneratorフォルダ内に生成されています。
+
+Output4in1Book.pdf
+
+出力ファイルの名前を変えたい時は、
+
+python 4in1PDFBookGenerator.py -i (入力ファイルの名前) -o (出力ファイルの名前)
+
+とします。
+
+以上です。
+
+------------------------------------
+
+※注１：
+(4in1PDFBookGeneratoのフォルダを置いた場所)は、例えばデスクトップは
+Desktop/4in1PDFBookGenerator/
+よって、
+cd Desktop/4in1PDFBookGenerator/
+
+※注２：
+入力ファイルの名前は、Pathで指定してください。
+例１：
+デスクトップに置いた
+testIn.pdfファイル
+を指定する場合は、
+python 4in1PDFBookGenerator.py -i ~/Desktop/testIn.pdf
+例２：
+4in1PDFBookGeneratorフォルダに置いた
+testIn.pdfを指定する場合は、
+（cd Desktop/4in1PDFBookGenerator/をした上で）
+python 4in1PDFBookGenerator.py -i testIn.pdf
+あるいは、
+python 4in1PDFBookGenerator.py -i ~/Desktop/4in1PDFBookGenerator/testIn.pdf
+
